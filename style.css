@@ -1,0 +1,109 @@
+/* 重新設計容器 */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* 淡灰色背景 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 淡淡的陰影效果 */
+}
+
+
+/* 重新設計標題文字 */
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 36px; /* 較大的字體 */
+}
+
+
+/* 問題容器樣式 */
+#question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* 修改按鈕樣式 */
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px; /* 一些間距 */
+}
+
+
+#eat-button {
+    background-color: #4caf50; /* 綠色按鈕 */
+    color: #fff;
+}
+
+
+#not-eat-button {
+    background-color: #f44336; /* 紅色按鈕 */
+    color: #fff;
+}
+
+
+/* 修改結果容器樣式 */
+#result-container {
+    text-align: center;
+    padding: 20px;
+    display: none; /* 初始時隱藏結果容器 */
+}
+
+
+/* 修改評語文字樣式 */
+#comment-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* 修改重新開始按鈕樣式 */
+#restart-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #008CBA; /* 藍色按鈕 */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* 初始時隱藏重新開始按鈕 */
+}
+
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+
+    h1 {
+        font-size: 28px; /* 較小的字體 */
+    }
+
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+
+    #comment-text {
+        font-size: 16px;
+    }
+
+
+    #restart-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
